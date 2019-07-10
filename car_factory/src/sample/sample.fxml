@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="450.0" prefWidth="706.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="706.0" style="-fx-background-color: #751e1e;">
+         <children>
+            <AnchorPane layoutY="60.0" style="-fx-background-color: #ffdcce;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+               <children>
+                  <Separator layoutX="384.0" orientation="VERTICAL" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="347.0" AnchorPane.rightAnchor="347.0" AnchorPane.topAnchor="0.0" />
+                  <Separator layoutX="4.0" layoutY="10.0" orientation="VERTICAL" prefHeight="415.0" prefWidth="353.0" />
+                  <Separator layoutX="353.0" layoutY="5.0" orientation="VERTICAL" prefHeight="415.0" prefWidth="353.0" />
+                  <Slider fx:id="bodyProducingTime" layoutX="73.0" layoutY="55.0" majorTickUnit="50.0" max="250.0" orientation="VERTICAL" prefHeight="140.0" prefWidth="30.0" showTickLabels="true" AnchorPane.bottomAnchor="194.0" AnchorPane.leftAnchor="73.0" AnchorPane.rightAnchor="597.0" AnchorPane.topAnchor="55.0" />
+                  <Slider fx:id="motorProducingTime" layoutX="247.0" layoutY="55.0" majorTickUnit="50.0" max="250.0" orientation="VERTICAL" prefHeight="176.0" prefWidth="36.0" showTickLabels="true" AnchorPane.bottomAnchor="194.0" AnchorPane.leftAnchor="251.0" AnchorPane.rightAnchor="419.0" AnchorPane.topAnchor="55.0" />
+                  <Slider fx:id="carDealingTime" layoutX="592.0" layoutY="55.0" majorTickUnit="50.0" max="250.0" orientation="VERTICAL" prefHeight="140.0" prefWidth="30.0" showTickLabels="true" AnchorPane.bottomAnchor="194.0" AnchorPane.leftAnchor="597.0" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="55.0" />
+                  <Slider fx:id="accessoryProducingTime" layoutX="419.0" layoutY="55.0" majorTickUnit="50.0" max="250.0" orientation="VERTICAL" prefHeight="176.0" prefWidth="30.0" showTickLabels="true" />
+                  <Label contentDisplay="CENTER" layoutX="33.0" layoutY="3.0" prefHeight="18.0" prefWidth="110.0" text="Body producing" textOverrun="CLIP" AnchorPane.bottomAnchor="364.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="557.0" AnchorPane.topAnchor="3.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="211.0" layoutY="23.0" prefHeight="18.0" prefWidth="116.0" text="Motor producing" textOverrun="CLIP" AnchorPane.topAnchor="23.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="362.0" layoutY="5.0" prefHeight="18.0" prefWidth="141.0" text="Accessory producing" textOverrun="CLIP" AnchorPane.bottomAnchor="365.0" AnchorPane.leftAnchor="362.0" AnchorPane.rightAnchor="197.0" AnchorPane.topAnchor="5.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="575.0" layoutY="24.0" prefHeight="18.0" prefWidth="81.0" text="Car dealing" textOverrun="CLIP" AnchorPane.topAnchor="24.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="39.0" layoutY="234.0" prefHeight="18.0" prefWidth="98.0" text="Now available:" textOverrun="CLIP" AnchorPane.leftAnchor="39.0" AnchorPane.rightAnchor="563.0" AnchorPane.topAnchor="234.0">
+                     <font>
+                        <Font name="Bell MT" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="217.0" layoutY="234.0" prefHeight="18.0" prefWidth="98.0" text="Now available:" textOverrun="CLIP" AnchorPane.leftAnchor="217.0" AnchorPane.rightAnchor="385.0">
+                     <font>
+                        <Font name="Bell MT" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="387.0" layoutY="234.0" prefHeight="18.0" prefWidth="98.0" text="Now available:" textOverrun="CLIP">
+                     <font>
+                        <Font name="Bell MT" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="39.0" layoutY="290.0" prefHeight="18.0" prefWidth="98.0" text="Total produced:" textOverrun="CLIP" AnchorPane.bottomAnchor="50.0" AnchorPane.topAnchor="270.0">
+                     <font>
+                        <Font name="Bell MT" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="217.0" layoutY="290.0" prefHeight="18.0" prefWidth="98.0" text="Total produced:" textOverrun="CLIP" AnchorPane.bottomAnchor="50.0" AnchorPane.topAnchor="270.0">
+                     <font>
+                        <Font name="Bell MT" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="386.0" layoutY="290.0" prefHeight="18.0" prefWidth="98.0" text="Total produced:" textOverrun="CLIP" AnchorPane.bottomAnchor="50.0" AnchorPane.topAnchor="270.0">
+                     <font>
+                        <Font name="Bell MT" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="564.0" layoutY="234.0" prefHeight="18.0" prefWidth="98.0" text="Total supplied:" textOverrun="CLIP">
+                     <font>
+                        <Font name="Bell MT" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="motorTotalCount" alignment="CENTER" layoutX="241.0" layoutY="323.0" prefHeight="30.0" prefWidth="50.0" text="0" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="37.0" AnchorPane.leftAnchor="241.0" AnchorPane.rightAnchor="409.0" AnchorPane.topAnchor="323.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="15.0" />
+                     </font></Label>
+                  <Label fx:id="bodyTotalCount" alignment="CENTER" layoutX="63.0" layoutY="323.0" prefHeight="30.0" prefWidth="50.0" text="0" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="37.0" AnchorPane.topAnchor="323.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="motorOnStorage" alignment="CENTER" layoutX="241.0" layoutY="247.0" prefHeight="55.0" prefWidth="56.0" text="0" textAlignment="JUSTIFY" AnchorPane.leftAnchor="241.0" AnchorPane.rightAnchor="409.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="bodyOnStorage" alignment="CENTER" layoutX="63.0" layoutY="248.0" prefHeight="55.0" prefWidth="50.0" text="0" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="122.0" AnchorPane.topAnchor="248.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="accessoryOnStorage" alignment="CENTER" layoutX="409.0" layoutY="248.0" prefHeight="55.0" prefWidth="50.0" text="0" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="Bell MT Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="accessoryTotalCount" alignment="CENTER" layoutX="409.0" layoutY="323.0" prefHeight="30.0" prefWidth="50.0" text="0" textAlignment="JUSTIFY" AnchorPane.bottomAnchor="37.0" AnchorPane.topAnchor="323.0">
+                     <font>
+                        <Font name="Bell MT Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="carDelivered" alignment="CENTER" layoutX="588.0" layoutY="248.0" prefHeight="55.0" prefWidth="50.0" text="0" textAlignment="JUSTIFY">
+                     <font>
+                        <Font name="Bell MT Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <Label layoutX="213.0" prefHeight="60.0" prefWidth="275.0" text="The Car Factory" textFill="#ffcfcf">
+               <font>
+                  <Font name="Bell MT" size="40.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <FlowPane prefHeight="37.0" prefWidth="90.0" GridPane.rowIndex="1" />
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
